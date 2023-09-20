@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GRIYA AKSANA</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+      @-ms-viewport {
+        width: device-width;
+      }
+    </style>
+    <link rel="stylesheet" href="vendor/reset.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="multiple-scenes">
+    <div id="pano"></div>
+
+    <div id="sceneList">
+      <ul class="scenes">
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="0-1f---view-perumahan"
+        >
+          <li class="text">1F - VIEW PERUMAHAN</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="1-1a---lt1---hal-depan"
+        >
+          <li class="text">1A - LT1 - HAL DEPAN</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="2-1b---lt1---ruang-utama"
+        >
+          <li class="text">1B - LT1 - RUANG UTAMA</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="3-1c---lt-1---wc">
+          <li class="text">1C - LT 1 - WC</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="4-1d---lt1---ruang-belakang"
+        >
+          <li class="text">1D - LT1 - RUANG BELAKANG</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="5-1e---lt1---ruang-art"
+        >
+          <li class="text">1E - LT1 - RUANG ART</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="6-2a---lt2---ruang-utama"
+        >
+          <li class="text">2A - LT2 - RUANG UTAMA</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="7-2b---lt2---ruang-dalam-1"
+        >
+          <li class="text">2B - LT2 - RUANG DALAM 1</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="8-2c---lt2---balkon"
+        >
+          <li class="text">2C - LT2 - BALKON</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="9-2d---lt2---ruang-dalam-2"
+        >
+          <li class="text">2D - LT2 - RUANG DALAM 2</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="10-2e---lt2---wc-1">
+          <li class="text">2E - LT2 - WC 1</li>
+        </a>
+
+        <a
+          href="javascript:void(0)"
+          class="scene"
+          data-id="11-2f---lt2---ruang-dalam-3"
+        >
+          <li class="text">2F - LT2 - RUANG DALAM 3</li>
+        </a>
+
+        <a href="javascript:void(0)" class="scene" data-id="12-2g---lt2---wc-2">
+          <li class="text">2G - LT2 - WC 2</li>
+        </a>
+      </ul>
+    </div>
+
+    <div id="titleBar">
+      <h1 class="sceneName"></h1>
+    </div>
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png" />
+      <img class="icon on" src="img/pause.png" />
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png" />
+      <img class="icon on" src="img/windowed.png" />
+    </a>
+
+    <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand.png" />
+      <img class="icon on" src="img/collapse.png" />
+    </a>
+
+    <a
+      href="javascript:void(0)"
+      id="viewUp"
+      class="viewControlButton viewControlButton-1"
+    >
+      <img class="icon" src="img/up.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewDown"
+      class="viewControlButton viewControlButton-2"
+    >
+      <img class="icon" src="img/down.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewLeft"
+      class="viewControlButton viewControlButton-3"
+    >
+      <img class="icon" src="img/left.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewRight"
+      class="viewControlButton viewControlButton-4"
+    >
+      <img class="icon" src="img/right.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewIn"
+      class="viewControlButton viewControlButton-5"
+    >
+      <img class="icon" src="img/plus.png" />
+    </a>
+    <a
+      href="javascript:void(0)"
+      id="viewOut"
+      class="viewControlButton viewControlButton-6"
+    >
+      <img class="icon" src="img/minus.png" />
+    </a>
+
+    <script src="vendor/screenfull.min.js"></script>
+    <script src="vendor/bowser.min.js"></script>
+    <script src="vendor/marzipano.js"></script>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
